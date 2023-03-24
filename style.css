@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "PlusJakartaSans-md";
+    src: url("./assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+    font-family: "PlusJakartaSans-exbd";
+    src: url("./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PlusJakartaSans-md";
+    background-color: hsl(210, 60%, 98%);
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 42.5rem;
+    max-height: 92vh;
+    margin-top: 1rem;
+}
+
+.notify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.n-txt{
+    display: flex;
+    align-items: center;
+}
+.n-txt h2,strong{
+    font-family: "PlusJakartaSans-exbd";
+}
+
+#b{
+    padding:.1rem .7rem;
+    color:  white;
+    background-color:  hsl(219, 85%, 26%);
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+.notify p{
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+.notify p:hover{
+    color: hsl(219, 85%, 26%);
+}
+.c{
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.c.active{
+    background-color: hsl(210, 60%, 98%);
+}
+.p.act::after{
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    right: -0.75rem;
+    top: 0.5rem;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+}
+.c img{
+    width: 2.875rem;
+}
+.c-tp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.p{
+    position: relative;
+}
+.c-tp .date,.c-tpc .date{
+    margin: 0;
+    color: hsl(219, 14%, 63%);
+}
+.c-tpc{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.card-4{
+    align-items: flex-start;
+}
+.card-4 img{
+    margin-top: 1rem;
+}
+.card-5{
+    justify-content: space-between;
+}
+.card-5 .img{
+    padding: 0.1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.card-5 .img:hover{
+    border-color: hsl(205, 33%, 90%);
+    border-radius: 0.5rem;
+}
+.c-tpi{
+    display: flex;
+    align-items: flex-start;
+}
+.c-tsp{
+    display: flex;
+    align-items: center;
+}
+.c-tsp p{
+    margin-left: 0.5rem;
+    position: relative;
+}
+.c-tcp{
+    margin-left: 1rem;
+}
+.c-p{
+    padding: 1rem;
+    color: hsl(219, 12%, 42%);
+    border-radius: 0.5rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+.c-p p{margin: 
+    0;}
+.c-p:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.c-t{
+    display: flex;
+    align-items: center;
+}
+.c-t strong{
+    margin-right: 0.5rem;
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+.c-t strong:hover{
+    color: hsl(219, 85%, 26%);
+}
+.c-t p{
+    margin: 0;
+    color: hsl(219, 12%, 42%);
+}
+.c-t span{
+    margin-left: 0.5rem;
+    color: hsl(219, 12%, 42%);
+    font-family: "PlusJakartaSans-exbd";
+    cursor: pointer;
+}
+.c-t span:hover{
+    color: hsl(219, 85%, 26%);
+}
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media all and (max-width:675px){
+    main{
+        max-width: 100%;
+    }
+}
